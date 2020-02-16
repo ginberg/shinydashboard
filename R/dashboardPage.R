@@ -67,7 +67,7 @@ dashboardPage <- function(header, sidebar, body, title = NULL,
       # the collapsed (AdminLTE code)
       class = paste0("skin-", skin, if (collapsed) " sidebar-collapse"),
       style = "min-height: 611px;",
-      shiny::bootstrapPage(content, title = title)
+      shiny::bootstrapPage(bootstraplib::bootstrap(), content, title = title)
     )
   )
 }
